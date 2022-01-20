@@ -12,11 +12,11 @@ def fetch():
   #url = "https://www.w3schools.com/xml/cd_catalog.xml"
 
   xml_data = requests.get(url).content
-
-  xml_data = str(xml_data)
   
   xml_data = xml_data.decode("utf8")
 
+  xml_data = str(xml_data)
+  
   print('fetch end')
 
   return xml_data

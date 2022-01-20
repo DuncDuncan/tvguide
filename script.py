@@ -1,4 +1,3 @@
-import datetime, time
-now = datetime.datetime.now().strftime("%H:%M")
+meow = 'meow'
 f = open("time.txt", "w")
-f.write(now)
+f.write(meow)

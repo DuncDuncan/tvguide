@@ -22,7 +22,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install requests
-          pip install xml
+          
       - name: execute py script # run sj-gobierno.py to get the latest data
         run: python3 getData.py
           

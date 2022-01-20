@@ -14,13 +14,9 @@ def fetch():
   xml_data = requests.get(url).content
 
   xml_data = str(xml_data)
+  
+  xml_data = xml_data.decode("utf8")
 
-  xml_data.replace("b'","")
-  xml_data.replace("</tv>'","")
-
-  xml_data = xml_data[2:len(xml_data)-1]
-
-  print(xml_data[0:100])
   print('fetch end')
 
   return xml_data

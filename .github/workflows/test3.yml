@@ -23,7 +23,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
           
-      - name: execute py script # run sj-gobierno.py to get the latest data
+      - name: execute py script # run .py script to get the latest data
         run: python3 getData.py
           
       - name: commit files

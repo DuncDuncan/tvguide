@@ -2,7 +2,7 @@ name: run .py script please
 
 on:
   schedule:
-    - cron:  "* * * * *"
+    - cron:  "0 0 * * *"
   workflow_dispatch:
   
 
